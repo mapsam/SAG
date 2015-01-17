@@ -1,7 +1,5 @@
-# SAG
-Spreadsheet Address Geocoder
+# `S`preadsheet `A`ddress `G`eocoder
 
-## Example API Calls
+SAG takes address columns from a google spreadsheet using [Tabletop.js](https://github.com/jsoma/tabletop) and geocodes the information using [Mapbox's batch HTTP geocoding service](https://www.mapbox.com/developers/api/v3/geocoding/#batch) and pushes into a map.
 
-* **OSM Nominatim** - [`http://nominatim.openstreetmap.org/search?q=4507%20sunnyside%20avenue%20north%20seattle%20wa&format=json&polygon=0&addressdetails=1`](http://nominatim.openstreetmap.org/search?q=4507%20sunnyside%20avenue%20north%20seattle%20wa&format=json&polygon=0)
-* **Census Geocder** - [`http://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=4507%20Sunnyside%20Avenue%20North%20Seattle%20WA%2098013&benchmark=9&format=jsonp`](http://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=4507%20Sunnyside%20Avenue%20North%20Seattle%20WA%2098013&benchmark=9&format=jsonp)
+Yay!
