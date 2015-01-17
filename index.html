@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+  <title>hello world</title>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="static/q.js"></script>
+  <script src="static/tabletop/tabletop.js"></script>
+  <link href="static/style.css" rel="stylesheet">
+</head>
+<body>
+  <ul id="address"></ul>
+
+
+  <script src="/static/sag.js"></script>
+  <script>
+    /*
+    **
+    **  entry point is window.onload
+    **
+    */
+    function init_app () {
+        window.App = window.App || {};
+        App.sag = new sagController();
+    };
+    window.onload = init_app;
+  </script>
+</body>
+</html>
