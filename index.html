@@ -1,14 +1,24 @@
 <html lang="en">
 <head>
-  <title>hello world</title>
+  <title>SAG</title>
+
+  <!-- jquery -->
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script src="static/q.js"></script>
+
+  <!-- tabletop -->
   <script src="static/tabletop/tabletop.js"></script>
+
+  <!-- leaflet -->
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
+
+  <!-- app -->
   <link href="static/sag.css" rel="stylesheet">
+
 </head>
 <body>
-  <ul id="address"></ul>
+  <div id="map"></div>
 
 
   <script src="/static/sag.js"></script>
@@ -20,7 +30,7 @@
     */
     function init_app () {
         window.App = window.App || {};
-        App.sag = new sagController();
+        App.sag = new sag();
     };
     window.onload = init_app;
   </script>
